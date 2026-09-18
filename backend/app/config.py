@@ -50,7 +50,7 @@ class Settings(BaseSettings):
     VISION_API_KEY: str = ""  # falls back to GROQ_API_KEY if empty and provider=groq
 
     # --- Embeddings ---
-    EMBEDDING_MODEL: str = "intfloat/multilingual-e5-large"
+    EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
     EMBEDDING_DEVICE: str = "cpu"
 
     # --- Vector store ---
